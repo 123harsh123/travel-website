@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+  font-family: "raleway";
+  font-weight: 600;
+}
+P {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+a {
+  font-family: "raleway";
+  font-weight: 600;
+}
+.img-responsive {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* header part start */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+.menu-par {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.logo-par h2 {
+  color: #fff;
+  font-size: 40px;
+}
+.nav ul li a {
+  color: #fff;
+  padding: 10px;
+  position: relative;
+}
+.nav ul li a :before {
+  content: "s";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-color: #fff;
+  width: 0%;
+  height: 2px;
+  font-size: 0px;
+  transition: all 0.5s ease;
+}
+.nav ul li a:hover:before {
+  width: 74%;
+}
+.nav ul li {
+  display: inline-block;
+}
+.nav-fixed {
+  background-color: #fff;
+  box-shadow: 2px 2px 10px #bbb;
+}
+.nav-fixed h2 {
+  color: #00a8b4;
+}
+.nav-fixed ul li a {
+  color: #00a8b4;
+}
+
+/* landing page start */
+header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+video#video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu-par {
+  padding: 30px 0px;
+}
+.header-info-par a {
+  background-color: #fff;
+  color: #00a8b4;
+  padding: 17px 45px;
+  display: inline-block;
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.header-info-par a:after {
+  content: "Read More";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #00a8b4;
+  color: #fff;
+  width: 0%;
+  height: 100%;
+  transition: all 0.5s ease;
+  line-height: 50px;
+}
+.header-info-par a:hover:after {
+  width: 100%;
+}
+.header-info-par h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  padding: 20px 0px;
+  letter-spacing: 4px;
+}
+.header-info-par p {
+  line-height: 30px;
+  font-size: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* body part */
+section#Welcome-Text h2 {
+  color: #343a;
+  font-size: 45px;
+  padding-bottom: 12px;
+}
+section#Welcome-Text {
+  text-align: center;
+  padding: 100px 0px;
+}
+section#Welcome-Text p {
+  color: #777;
+  font-size: 16px;
+}
+
+
+/* slide play the role */
+
+.Slides {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.Slide_1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/recipe_slides/recipe1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  min-width: 60px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.Slide_1:hover {
+  min-width: 250px;
+}
+.Slide_1:hover .Slide_info {
+  transform: rotate(0deg);
+  font-size: 22px;
+  left: 20px;
+  bottom: 20px;
+}
+.Slide_info {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  color: #fff;
+  transform: rotate(-90deg);
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.Slide_2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/recipe_slides/recipe2.jpg);
+}
+.Slide_3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/recipe_slides/recipe3.jpg);
+}
+
+.Slide_4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/recipe_slides/recipe4.jpg);
+}
+
+.Slide_5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/recipe_slides/recipe5.jpg);
+}
+
+.Slide_6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/recipe_slides/recipe6.jpg);
+}
+
+.Slide_7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/recipe_slides/recipe7.jpg);
+}
+
+#book {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/explore-bg.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+  color: #fff;
+}
+.book-content-par {
+  display: flex;
+}
+.book-counter {
+  flex: 1;
+}
+.book-form {
+  flex: 1;
+}
+.book-counter h3 {
+  font-size: 90px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+div#clockdiv {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  display: inline-block;
+}
+div#clockdiv > div{
+  display: inline-block;
+  background-color: rgba(255,255,255,0.5);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 30px #fff;
+  margin-right: 20px;
+}
+.smalltext {
+  font-size: 25px;
+  padding-top: 5px;
+}
+div#clockdiv span {
+  padding: 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+input[type="text"]:focus, select:focus, textarea:focus {
+  border: 2px solid #00a8c5;
+  outline: none;
+}
+
+input[type="text"], select, textarea {
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: #00a8c5;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+input[type="submit"] {
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  width: 100px;
+  border: 1px solid #fff;
+  padding: 12px 0px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(255,255,255,0.5);
+} 
